@@ -1,0 +1,435 @@
+/*
+-----------------------------------------------------------
+STYLESHEET FOR HEARTBEAT WEBSITE
+-----------------------------------------------------------
+Author: Austin Davis
+Description: Heartbeat CPR educators website
+Version: 1.0
+*/
+
+
+
+
+
+
+/* 
+-------------------------------------------------------------- 
+Web Fonts
+-------------------------------------------------------------- 
+*/
+
+/* 'Roboto */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i');
+
+
+/* 
+-------------------------------------------------------------- 
+General structure
+-------------------------------------------------------------- 
+*/
+
+body {
+	font-size: 100%;
+	font-family: 'Roboto', sans-serif;
+	background-color: #CCCCCC;
+	margin: 0;
+}
+
+#wrapper {
+	display: block;
+	max-width: 1040px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+#content-container {
+	width: 100%;
+}
+
+#content {
+	width: 100%;
+	margin: 40px 50px;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text,
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+
+/* END General structure */
+
+
+/*
+--------------------------------------------------------------
+Global styles
+-------------------------------------------------------------- 
+*/
+
+em {	
+	font-style: italic;
+}
+
+strong {
+	font-weight: 400;
+	/*font-weight: bold;*/
+}
+
+/*remove anchor styling*/
+a {
+	text-decoration: none;
+}
+
+a.hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+p {
+	font-weight: 300;
+	letter-spacing: .5px;
+	color: #58595B;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 2.5em;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 1.5em;
+	color: #231F20;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 1em;
+	color: #58595B;
+}
+
+/*
+--------------------------------------------------------------
+Pre-Header styles
+-------------------------------------------------------------- 
+*/
+
+#pre-header {
+	background: #808080;
+	padding: 0 50px;
+	height: 28px;
+}
+
+/*Social media links*/
+#social-links {
+    list-style-type: none;
+    float: left;
+    margin: 0px;
+    padding: 2.5px 0;
+}
+
+#social-links li {
+	display: inline-block;
+}
+
+#social-links li a {
+	color: #565656;
+	padding-right: 10px;
+	transition: .3s;
+	transition-timing-function: ease-in-out;
+}
+
+#social-links li a:hover {
+	color: #fff;
+}
+
+/*Search input field*/
+input#search {
+	float: right;
+	margin: 4px 0;
+	padding: 2px 0 2px 12px;
+	border-radius: 2px;
+	border: none;
+	color: #808080;
+	background: #565656;
+	width: 80px;
+}
+
+input#search:focus {
+	width: 175px;
+	background: #fff;
+	border: none;
+	border-radius: 2px;
+	transition: 1s;
+}
+
+
+/*
+--------------------------------------------------------------
+Header Styles
+-------------------------------------------------------------- 
+*/
+
+#header {
+	margin: 0 50px;
+	height: 60px;
+}
+
+/*Logo*/
+#header-logo {
+	height: 32px;
+	width: auto;
+	float: left;
+	display: inline-block;
+	padding: 15px 20px 9px 50px;
+	margin: 0 0 0 -50px;
+	opacity: 1;
+}
+
+#header-logo:hover {
+	opacity: .8;
+}
+
+/*Main nav*/
+#main-nav {
+	float: right;
+}
+
+#main-nav ul {
+	margin: 0 -10px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+#main-nav li {
+	display: inline-block;
+	padding: 19px 10px 15px 10px;
+}
+
+#main-nav a {
+	font-size: 1em;
+	font-weight: 300;
+	color: #231F20;
+}
+
+#main-nav a:hover {
+	color: #e21e26;
+	transition: .1s;
+}
+
+/*
+--------------------------------------------------------------
+Header Image
+-------------------------------------------------------------- 
+*/
+
+#masthead {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	height: 490px;
+	background: url(img/group-cpr.jpeg) no-repeat center center;
+}
+
+#masthead-overlay {
+	position: absolute;
+	bottom: 0;
+	height: 240px;
+	padding: 0 0 0 50px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+}
+
+/*Masthead title styles*/
+#masthead-title {
+	color: #fff;
+	margin: 40px 0 0 0px;
+}
+
+#masthead-title h1 {
+	font-weight: 100;
+	font-size: 3em;
+	margin: 0 0 15px 0;
+}
+
+#masthead-title p {
+	color: #fff;
+	font-weight: 300;
+	font-size: 1.4em;
+	margin: 0 0 25px 0;
+}
+
+/*Masthead button styles*/
+#masthead-button {
+	margin: 40px 0 0 0;
+}
+
+#masthead-button-anchor {
+	padding: 14px 35px;
+	color: #fff;
+	font-size: 1em;
+	font-weight: 300;
+	background: #DF2127;
+}
+
+#masthead-button-anchor:hover {
+	background: #cc1e23;
+	transition: .3s;
+}
+
+/*
+--------------------------------------------------------------
+Main Styles
+-------------------------------------------------------------- 
+*/
+
+#main {
+	margin: 0 50px;
+	padding: 0 0 50px 0;
+	background: #fff;
+	overflow: auto;
+}
+
+/*Article Styles*/
+#article-content {
+	margin: 0 20px 0 0;
+	width: 55%;
+	float: left;
+}
+
+.article h2 {
+	margin: 50px 0 0 0;
+}
+
+.article p {
+	line-height: 28px;
+}
+
+.article-button {
+	margin: 30px 0 10px 0;
+}
+
+.article a {
+	padding: 10px 20px;
+	color: #fff;
+	font-size: .8em;
+	font-weight: 400;
+	background: #DF2127;
+}
+
+.article a:hover {
+	background: #cc1e23;
+	transition: .3s;
+}
+
+/*
+--------------------------------------------------------------
+Sidebar Styles
+-------------------------------------------------------------- 
+*/
+
+#sidebar {
+	margin: 50px 0 0 20px;
+	width: 35%;
+	float: right;
+}
+
+
+/*AHA logo styles*/
+#aha-logo {
+	margin: 0 0 30px 0;
+}
+
+#aha-logo img {
+	max-width: 100%;
+	min-width: 200px;
+}
+
+/*Upcomming classes styles*/
+#upcoming-courses h2 {
+	margin: 0 0 30px 0;
+}
+
+#course-listing {
+	margin: 5px 0 5px 0;
+	padding: 15px 20px;
+	background: #ececec;
+	transition: .5s;
+	transition-timing-function: ease-in-out;
+}
+
+#course-listing:hover {
+	background: #ccc;
+}
+
+#course-listing h3 {
+	margin: 0px 0 3px 0;
+}
+
+#course-listing p {
+	margin: 0;
+}
+
+#course-listings-see-more p {
+	color: #DF2127;
+	padding-bottom: 0px;
+	margin: 10px 0 0 5px;
+	display: inline-block;
+	border-bottom: none;
+	transition: .2s;
+	transition-timing-function: ease-in-out;
+}
+
+#course-listings-see-more p:hover {
+	border-bottom: solid;
+	border-width: .5px;
+	padding-bottom: 2px;
+}
+
+/*Contact us styles*/
+#contact-us {
+	margin: 40px 0 0 0;
+}
+
+#contact-us h2 {
+	margin: 0 0 30px 0;
+}
+
+#contact-info {
+	padding: 10px 20px 15px 20px;
+	background: #ececec;
+}
+
+#contact-info a {
+	color: #58595B;
+}
+
+.sub-heading {
+	display: inline-block;
+	font-weight: 400;
+	color: #58595B;
+	letter-spacing: .5px;
+	margin: 10px 0 0 0;
+}
+
+#contact-info p {
+	margin: 0;
+}
