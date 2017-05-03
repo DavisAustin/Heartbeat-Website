@@ -46,9 +46,8 @@ body {
 	width: 100%;
 }
 
-#content {
-	width: 100%;
-	margin: 40px 50px;
+.content {
+	padding: 0 50px;
 }
 
 /* Text meant only for screen readers */
@@ -99,33 +98,47 @@ a {
 }
 
 a.hover {
+	margin: 0;
 	text-decoration: none;
 	cursor: pointer;
 }
 
 p {
+	margin: 0;
 	font-weight: 300;
 	letter-spacing: .5px;
+	line-height: 28px;
+	font-size: 1em;
 	color: #58595B;
 }
 
 h1 {
+	margin: 0 0 15px 0;
 	font-weight: 100;
-	font-size: 2.5em;
+	font-size: 3em;
+	color: #231F20;
 }
 
 h2 {
+	margin: 50px 0 20px 0;
 	font-weight: 300;
 	font-size: 1.5em;
 	color: #231F20;
 }
 
 h3 {
+	margin: 0 0 3px 0;
 	font-weight: 700;
 	font-size: 1em;
 	color: #58595B;
 }
 
+h4 {
+	margin: 50px 0 10px 0;
+	color: #231F20;
+	font-weight: 300;
+	font-size: 1em;
+}
 /*
 --------------------------------------------------------------
 Pre-Header styles
@@ -134,7 +147,6 @@ Pre-Header styles
 
 #pre-header {
 	background: #808080;
-	padding: 0 50px;
 	height: 28px;
 }
 
@@ -189,7 +201,6 @@ Header Styles
 */
 
 #header {
-	margin: 0 50px;
 	height: 60px;
 }
 
@@ -253,33 +264,28 @@ Header Image
 	position: absolute;
 	bottom: 0;
 	height: 240px;
-	padding: 0 0 0 50px;
 	width: 100%;
 	background-color: rgba(0,0,0,0.3);
 }
 
 /*Masthead title styles*/
 #masthead-title {
-	color: #fff;
-	margin: 40px 0 0 0px;
+	margin-top: 40px;
 }
 
 #masthead-title h1 {
-	font-weight: 100;
-	font-size: 3em;
-	margin: 0 0 15px 0;
+	color: #fff;
 }
 
 #masthead-title p {
 	color: #fff;
 	font-weight: 300;
 	font-size: 1.4em;
-	margin: 0 0 25px 0;
 }
 
 /*Masthead button styles*/
 #masthead-button {
-	margin: 40px 0 0 0;
+	margin-top: 40px;
 }
 
 #masthead-button-anchor {
@@ -302,29 +308,18 @@ Main Styles
 */
 
 #main {
-	margin: 0 50px;
-	padding: 0 0 50px 0;
 	background: #fff;
 	overflow: auto;
 }
 
 /*Article Styles*/
 #article-content {
-	margin: 0 20px 0 0;
 	width: 55%;
 	float: left;
 }
 
-.article h2 {
-	margin: 50px 0 0 0;
-}
-
-.article p {
-	line-height: 28px;
-}
-
 .article-button {
-	margin: 30px 0 10px 0;
+	margin: 30px 0 70px 0
 }
 
 .article a {
@@ -347,7 +342,7 @@ Sidebar Styles
 */
 
 #sidebar {
-	margin: 50px 0 0 20px;
+	margin-top: 50px;
 	width: 35%;
 	float: right;
 }
@@ -364,10 +359,6 @@ Sidebar Styles
 }
 
 /*Upcomming classes styles*/
-#upcoming-courses h2 {
-	margin: 0 0 30px 0;
-}
-
 #course-listing {
 	margin: 5px 0 5px 0;
 	padding: 15px 20px;
@@ -380,18 +371,14 @@ Sidebar Styles
 	background: #ccc;
 }
 
-#course-listing h3 {
-	margin: 0px 0 3px 0;
-}
-
 #course-listing p {
-	margin: 0;
+	line-height: normal;
 }
 
 #course-listings-see-more p {
 	color: #DF2127;
-	padding-bottom: 0px;
 	margin: 10px 0 0 5px;
+	padding-bottom: 0px;
 	display: inline-block;
 	border-bottom: none;
 	transition: .2s;
@@ -405,14 +392,6 @@ Sidebar Styles
 }
 
 /*Contact us styles*/
-#contact-us {
-	margin: 40px 0 0 0;
-}
-
-#contact-us h2 {
-	margin: 0 0 30px 0;
-}
-
 #contact-info {
 	padding: 10px 20px 15px 20px;
 	background: #ececec;
@@ -431,5 +410,51 @@ Sidebar Styles
 }
 
 #contact-info p {
+	line-height: normal;
+}
+
+/*
+--------------------------------------------------------------
+Footer Styles
+-------------------------------------------------------------- 
+*/
+
+#footer {
+	overflow: auto;
+	background: #ececec;
+}
+
+#footer-content {
+	margin: 0px auto;
+	width: 75%;
+	/*match the height of #footer-content with category*/
+	display: table;
+    content: " ";
+}
+
+.category {
+	float: left;
+	width: 32%;
+	padding-right: 5px;
+	height: auto;
+}
+
+.category ul {
 	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.category li a {
+	margin: 0;
+	font-weight: 300;
+	letter-spacing: .5px;
+	line-height: 24px;
+	font-size: .9em;
+	color: #58595B;
+}
+
+.category li a:hover {
+	color: #e21e26;
+	transition: .1s;
 }
