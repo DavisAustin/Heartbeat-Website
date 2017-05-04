@@ -475,14 +475,17 @@ Media Queries
 -------------------------------------------------------------- 
 */
 
-@media only screen and (max-device-width: 1039px) and (min-device-width: 800px) {
+@media only screen and 
+	(max-width: 1039px){
+	
 	.content {
 		padding: 0 20px 0 20px;
 	}
 
 }
 
-@media only screen and (max-device-width: 799px) {
+@media only screen and 
+	(max-width: 799px) {
 
 	.content {
 		padding: 0 10px;
