@@ -468,3 +468,160 @@ Footer Styles
 #copyright p {
 	font-size: .8em;
 }
+
+/*
+--------------------------------------------------------------
+Media Queries
+-------------------------------------------------------------- 
+*/
+
+@media only screen and (max-width: 1039px) and (min-width: 800px) {
+	.content {
+		padding: 0 20px 0 20px;
+	}
+
+}
+
+@media only screen and (max-width: 799px) {
+
+	.content {
+		padding: 0 10px;
+	}
+
+	p {
+		font-size: .8em;
+		line-height: 22px;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.2em;
+	}
+
+
+
+
+
+
+
+	/*Masthead Title Styles*/
+	#masthead {
+		height: 300px;
+		background: url(img/group-cpr.jpeg) no-repeat center center;
+	}
+
+	#masthead-overlay {
+		position: absolute;
+		bottom: 0;
+		height: 200px;
+	}	
+
+	#masthead-title p {
+		font-weight: 300;
+		font-size: 1em;
+	}
+
+	/*Masthead button styles*/
+	#masthead-button {
+		margin-top: 20px;
+	}
+
+	#masthead-button-anchor {
+		padding: 10px 25px;
+		font-size: .8em;
+	}
+
+	/*Article Styles*/
+	#article-content {
+		width: 100%;
+		float: left;
+	}
+
+	.article-button {
+		margin: 30px 0 50px 0
+	}
+
+	.article a {
+		padding: 10px 15px;
+		font-size: .6em;
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+
+	/*Sidebar Styles*/
+	#sidebar {
+		margin-top: 50px;
+		width: 100%;
+		float: left;
+	}
+
+
+	/*AHA logo styles*/
+	#aha-logo {
+		margin: 0 0 30px 0;
+	}
+
+	#aha-logo img {
+		max-width: 100%;
+	}
+
+	/*Upcomming classes styles*/
+	#course-listing {
+		margin: 5px 0 5px 0;
+		padding: 15px 20px;
+		background: #ececec;
+		transition: .5s;
+		transition-timing-function: ease-in-out;
+	}
+
+	#course-listing:hover {
+		background: #ccc;
+	}
+
+	#course-listing p {
+		line-height: normal;
+	}
+
+	#course-listings-see-more p {
+		color: #DF2127;
+		margin: 10px 0 0 5px;
+		padding-bottom: 0px;
+		display: inline-block;
+		border-bottom: none;
+		transition: .2s;
+		transition-timing-function: ease-in-out;
+	}
+
+	#course-listings-see-more p:hover {
+		border-bottom: solid;
+		border-width: .5px;
+		padding-bottom: 2px;
+	}
+
+	/*Contact us styles*/
+	#contact-info {
+		margin-bottom: 50px;
+		padding: 10px 20px 15px 20px;
+		background: #ececec;
+	}
+
+	#contact-info a {
+		color: #58595B;
+	}
+
+	.sub-heading {
+		display: inline-block;
+		font-weight: 400;
+		color: #58595B;
+		letter-spacing: .5px;
+		margin: 10px 0 0 0;
+	}
+
+	#contact-info p {
+		line-height: normal;
+	}
+
+}
