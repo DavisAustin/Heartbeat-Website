@@ -458,3 +458,13 @@ Footer Styles
 	color: #e21e26;
 	transition: .1s;
 }
+
+#copyright {
+	clear: left;
+	padding: 20px 0 10px 0;
+	text-align: center;
+}
+
+#copyright p {
+	font-size: .8em;
+}
